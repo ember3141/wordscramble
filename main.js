@@ -1,6 +1,8 @@
 function generate(){
     var array= document.getElementById("mainin").value.split("");
-    document.getElementById("out").innerHTML=getOrderedCombinations(array).join('<br>');
+    var out=getOrderedCombinations(array);
+    document.getElementById("out").innerHTML=out.join('<br>');
+    alert(out.length);
 }
 
 function getPermutations(arr) {
